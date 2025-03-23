@@ -3,45 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bagus Wahyu Pratomo - Data Science Explorer</title>
+    <title>Bagus Wahyu Pratomo - Data Science Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Logo">
+            </div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Section 1: Home -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 class="animate">Bagus Wahyu Pratomo</h1>
-            <p class="animate">Data Science Explorer | Navigating the Infinite Ocean of Knowledge</p>
+            <p class="animate">Data Scientist | Machine Learning Engineer | AI Enthusiast</p>
             <a href="#about" class="btn animate">Explore My Journey</a>
         </div>
-        <div class="stars"></div>
-        <div class="twinkling"></div>
     </section>
 
+    <!-- Section 2: About -->
     <section id="about" class="about">
         <h2 class="animate">About Me</h2>
         <div class="about-content">
             <img src="assets/images/profile.jpg" alt="Bagus Wahyu Pratomo" class="profile-img animate">
             <p class="animate">
-                I am a passionate Data Scientist, exploring the vast ocean of knowledge in the universe.
-                My journey is driven by curiosity and the desire to uncover hidden patterns in data.
-                With expertise in machine learning, data analysis, and visualization, I aim to turn
-                complex data into meaningful insights.
+                I am a passionate Data Scientist with a strong background in machine learning, data analysis, and data visualization. My journey in data science is driven by a curiosity to uncover hidden patterns and transform complex data into actionable insights. I specialize in building predictive models, developing data-driven solutions, and creating interactive visualizations to communicate findings effectively.
             </p>
+            <div class="social-links animate">
+                <a href="https://linkedin.com/in/baguswahyu" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/baguswahyu" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/baguswahyu" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </section>
 
+    <!-- Section 3: Skills -->
+    <section id="skills" class="skills">
+        <h2 class="animate">Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card animate">
+                <i class="fas fa-chart-line"></i>
+                <h3>Data Analysis</h3>
+                <p>Proficient in analyzing and interpreting complex datasets to derive meaningful insights.</p>
+            </div>
+            <div class="skill-card animate">
+                <i class="fas fa-brain"></i>
+                <h3>Machine Learning</h3>
+                <p>Experienced in building and deploying machine learning models for various applications.</p>
+            </div>
+            <div class="skill-card animate">
+                <i class="fas fa-database"></i>
+                <h3>Data Visualization</h3>
+                <p>Skilled in creating interactive and informative visualizations using tools like Tableau and Matplotlib.</p>
+            </div>
+            <div class="skill-card animate">
+                <i class="fas fa-code"></i>
+                <h3>Programming</h3>
+                <p>Expertise in Python, R, SQL, and other programming languages for data science.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Projects -->
     <section id="projects" class="projects">
         <h2 class="animate">My Projects</h2>
         <div class="project-grid">
@@ -49,27 +85,44 @@
                 <img src="assets/images/project1.jpg" alt="Project 1">
                 <h3>Galactic Data Analysis</h3>
                 <p>Analyzed celestial data to predict star formations using Python and TensorFlow.</p>
+                <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="project-card animate">
                 <img src="assets/images/project2.jpg" alt="Project 2">
                 <h3>Oceanic Pattern Recognition</h3>
                 <p>Developed a model to recognize patterns in oceanic data using deep learning.</p>
+                <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project-card animate">
+                <img src="assets/images/project3.jpg" alt="Project 3">
+                <h3>Financial Market Prediction</h3>
+                <p>Built a predictive model for stock market trends using time series analysis.</p>
+                <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
 
+    <!-- Section 5: Contact -->
     <section id="contact" class="contact">
         <h2 class="animate">Contact Me</h2>
         <form class="animate">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
         </form>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Bagus Wahyu Pratomo. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Bagus Wahyu Pratomo. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#home">Home</a> | 
+            <a href="#about">About</a> | 
+            <a href="#skills">Skills</a> | 
+            <a href="#projects">Projects</a> | 
+            <a href="#contact">Contact</a>
+        </div>
     </footer>
 
     <script src="assets/js/scripts.js"></script>
